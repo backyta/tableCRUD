@@ -21,6 +21,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
+
 const element = document.querySelector('.card');
 // PokemonApp(element);
 
