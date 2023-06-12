@@ -1,0 +1,11 @@
+
+.card{
+    position: relative;
+}
+.fab-button{
+    
+    /* para que sea absoluto ptiene que ser relativo su padre  */
+    position: absolute;
+    bottom  : -30px;
+    right   : -100px;
+}

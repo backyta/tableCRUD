@@ -1,7 +1,8 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { PokemonApp } from './src/pokemon/pokemon-app';
+// import { PokemonApp } from './src/pokemon/pokemon-app';
+import { UsersApp } from './src/users/uses-cases/user-app';
 
 
 document.querySelector('#app').innerHTML = `
@@ -21,5 +22,24 @@ document.querySelector('#app').innerHTML = `
 `;
 
 const element = document.querySelector('.card');
-PokemonApp(element);
+// PokemonApp(element);
+
+UsersApp( element ); 
+
+
+//? CARPETAS Y ORGANIZACION
+
+//* Mappers, la idea de esta carpeta o funciones mappers es que tomemos la info que luce de una manera y la 
+//* tranformemos a otra, esto tiene sentido porque la data de la BD tiene ciertos nombres estranios como con - guion
+
+//* Models, la idea de esta carpeta es que esto va ser una representacionde como queremos trabjar internamente
+//* en nuestra app, se va a trabajar con nuestros modelos y no importa que el backend retorne nombres diferentes
+//* vamos a estar trabajando con nuestros modelos.
+
+//* Presentacion, aqui vamos a poner nuestras funciones que van a servir para mostrarselas al usuario
+
+//* Store, va ser nuestro lugar centralizado de informacion
+
+//* Use-cases, es donde se va tener funciones especificas que realizan una tarea en especifico, traer datos,
+//* grabar datos, actualizar datos, crear, eliminar etc.
 
